@@ -1,0 +1,597 @@
+{
+	"id": "d16e760b-4aac-473a-9c7f-fec232ca2225",
+	"name": "Products",
+	"timestamp": "2025-09-08T09:40:47.909Z",
+	"collection_id": "47948940-40243fa7-b00b-4c52-b0c7-2a9b0fec36cf",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 49,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2025-09-08T09:40:41.317Z",
+	"totalFail": 1,
+	"results": [
+		{
+			"id": "78524ff7-a159-480c-91bd-beac04dca552",
+			"name": "get single product",
+			"url": "https://fakestoreapi.com/products/1",
+			"time": 513,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"successful response validation": true,
+				"Response is an object and not empty": true,
+				"Expected products validation": true,
+				"Expected JSON schema validation": true
+			},
+			"testPassFailCounts": {
+				"successful response validation": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response is an object and not empty": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Expected products validation": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Expected JSON schema validation": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				513
+			],
+			"allTests": [
+				{
+					"successful response validation": true,
+					"Response is an object and not empty": true,
+					"Expected products validation": true,
+					"Expected JSON schema validation": true
+				}
+			]
+		},
+		{
+			"id": "c3036a92-7a49-4c10-bdc1-00bf6c6aceff",
+			"name": "get all products",
+			"url": "https://fakestoreapi.com/products",
+			"time": 185,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"successful response validation": true,
+				"Response is an array and not empty": true,
+				"Length of the returned products(20)": true,
+				"Expected JSON schema validation": true
+			},
+			"testPassFailCounts": {
+				"successful response validation": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response is an array and not empty": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Length of the returned products(20)": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Expected JSON schema validation": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				185
+			],
+			"allTests": [
+				{
+					"successful response validation": true,
+					"Response is an array and not empty": true,
+					"Length of the returned products(20)": true,
+					"Expected JSON schema validation": true
+				}
+			]
+		},
+		{
+			"id": "c96ce089-0c5b-4170-b4bb-4beff596861f",
+			"name": "get limited products",
+			"url": "https://fakestoreapi.com/products?limit=12",
+			"time": 386,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"successful response validation": true,
+				"Products limit validation": true,
+				"json schema validation": true,
+				"response is an array and not empty": true
+			},
+			"testPassFailCounts": {
+				"successful response validation": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Products limit validation": {
+					"pass": 1,
+					"fail": 0
+				},
+				"json schema validation": {
+					"pass": 1,
+					"fail": 0
+				},
+				"response is an array and not empty": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				386
+			],
+			"allTests": [
+				{
+					"successful response validation": true,
+					"Products limit validation": true,
+					"json schema validation": true,
+					"response is an array and not empty": true
+				}
+			]
+		},
+		{
+			"id": "54e86393-046b-44ea-8cdb-d7f66f159d3a",
+			"name": "get sorted products",
+			"url": "https://fakestoreapi.com/products?sort=asc",
+			"time": 741,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"successful response validation": true,
+				"validate returned items are in sorted order": true,
+				"Response is an array and not empty": true,
+				"Length of the returned products(20)": true,
+				"Expected JSON schema validation": true
+			},
+			"testPassFailCounts": {
+				"successful response validation": {
+					"pass": 1,
+					"fail": 0
+				},
+				"validate returned items are in sorted order": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response is an array and not empty": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Length of the returned products(20)": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Expected JSON schema validation": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				741
+			],
+			"allTests": [
+				{
+					"successful response validation": true,
+					"validate returned items are in sorted order": true,
+					"Response is an array and not empty": true,
+					"Length of the returned products(20)": true,
+					"Expected JSON schema validation": true
+				}
+			]
+		},
+		{
+			"id": "99d8b663-da5b-41a8-8f8b-c0cc02e14b9a",
+			"name": "get products with limit/sort",
+			"url": "https://fakestoreapi.com/products?limit=7&sort=asc",
+			"time": 788,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"successful response validation": true,
+				"products limit validation": true,
+				"validate returned items are in sorted order": true,
+				"json schema validation": true,
+				"response is an array and not empty": true
+			},
+			"testPassFailCounts": {
+				"successful response validation": {
+					"pass": 1,
+					"fail": 0
+				},
+				"products limit validation": {
+					"pass": 1,
+					"fail": 0
+				},
+				"validate returned items are in sorted order": {
+					"pass": 1,
+					"fail": 0
+				},
+				"json schema validation": {
+					"pass": 1,
+					"fail": 0
+				},
+				"response is an array and not empty": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				788
+			],
+			"allTests": [
+				{
+					"successful response validation": true,
+					"products limit validation": true,
+					"validate returned items are in sorted order": true,
+					"json schema validation": true,
+					"response is an array and not empty": true
+				}
+			]
+		},
+		{
+			"id": "de28eb81-f642-4dd6-9248-35dcb1e63802",
+			"name": "get all categories",
+			"url": "https://fakestoreapi.com/products/categories",
+			"time": 184,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"successful response validation": true,
+				"expected schema validation": true,
+				"length of categories validation": true,
+				"response is an array and not empty validation": true
+			},
+			"testPassFailCounts": {
+				"successful response validation": {
+					"pass": 1,
+					"fail": 0
+				},
+				"expected schema validation": {
+					"pass": 1,
+					"fail": 0
+				},
+				"length of categories validation": {
+					"pass": 1,
+					"fail": 0
+				},
+				"response is an array and not empty validation": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				184
+			],
+			"allTests": [
+				{
+					"successful response validation": true,
+					"expected schema validation": true,
+					"length of categories validation": true,
+					"response is an array and not empty validation": true
+				}
+			]
+		},
+		{
+			"id": "930740ca-d0eb-4b18-b1b1-bd8b6f29f6cd",
+			"name": "get specific category product",
+			"url": "https://fakestoreapi.com/products/category/men's clothing",
+			"time": 185,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"successful response validation": true,
+				"expected schema validation": true,
+				"response is an array and not empty validation": true,
+				"only products of the given category is returned": true
+			},
+			"testPassFailCounts": {
+				"successful response validation": {
+					"pass": 1,
+					"fail": 0
+				},
+				"expected schema validation": {
+					"pass": 1,
+					"fail": 0
+				},
+				"response is an array and not empty validation": {
+					"pass": 1,
+					"fail": 0
+				},
+				"only products of the given category is returned": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				185
+			],
+			"allTests": [
+				{
+					"successful response validation": true,
+					"expected schema validation": true,
+					"response is an array and not empty validation": true,
+					"only products of the given category is returned": true
+				}
+			]
+		},
+		{
+			"id": "2b78cbde-bb5f-4f43-9131-3888a214cdc2",
+			"name": "add product",
+			"url": "https://fakestoreapi.com/products",
+			"time": 186,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"successful response validation": false,
+				"response validation": true,
+				"response is an object and not empty validation": true,
+				"Expected products validation": true,
+				"Expected JSON schema validation": true
+			},
+			"testPassFailCounts": {
+				"successful response validation": {
+					"pass": 0,
+					"fail": 1
+				},
+				"response validation": {
+					"pass": 1,
+					"fail": 0
+				},
+				"response is an object and not empty validation": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Expected products validation": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Expected JSON schema validation": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				186
+			],
+			"allTests": [
+				{
+					"successful response validation": false,
+					"response validation": true,
+					"response is an object and not empty validation": true,
+					"Expected products validation": true,
+					"Expected JSON schema validation": true
+				}
+			]
+		},
+		{
+			"id": "fafbd913-0459-4283-834b-a7384d834cad",
+			"name": "update product",
+			"url": "https://fakestoreapi.com/products/1",
+			"time": 776,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"successful response validation": true,
+				"response validation": true,
+				"response is an object and not empty validation": true,
+				"Expected products validation": true,
+				"Expected JSON schema validation": true
+			},
+			"testPassFailCounts": {
+				"successful response validation": {
+					"pass": 1,
+					"fail": 0
+				},
+				"response validation": {
+					"pass": 1,
+					"fail": 0
+				},
+				"response is an object and not empty validation": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Expected products validation": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Expected JSON schema validation": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				776
+			],
+			"allTests": [
+				{
+					"successful response validation": true,
+					"response validation": true,
+					"response is an object and not empty validation": true,
+					"Expected products validation": true,
+					"Expected JSON schema validation": true
+				}
+			]
+		},
+		{
+			"id": "2602bc79-fd07-4e9d-8959-566039a68a08",
+			"name": "partial update product",
+			"url": "https://fakestoreapi.com/products/1",
+			"time": 184,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"successful response validation": true,
+				"response validation": true,
+				"response is an object and not empty validation": true,
+				"Expected products validation": true,
+				"Expected JSON schema validation": true
+			},
+			"testPassFailCounts": {
+				"successful response validation": {
+					"pass": 1,
+					"fail": 0
+				},
+				"response validation": {
+					"pass": 1,
+					"fail": 0
+				},
+				"response is an object and not empty validation": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Expected products validation": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Expected JSON schema validation": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				184
+			],
+			"allTests": [
+				{
+					"successful response validation": true,
+					"response validation": true,
+					"response is an object and not empty validation": true,
+					"Expected products validation": true,
+					"Expected JSON schema validation": true
+				}
+			]
+		},
+		{
+			"id": "8a0b08d9-8805-43db-bf3f-306c89c1196d",
+			"name": "delete product",
+			"url": "https://fakestoreapi.com/products/1",
+			"time": 767,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"successful response validation": true,
+				"response validation": true,
+				"response is an object and not empty validation": true,
+				"Expected products validation": true,
+				"Expected JSON schema validation": true
+			},
+			"testPassFailCounts": {
+				"successful response validation": {
+					"pass": 1,
+					"fail": 0
+				},
+				"response validation": {
+					"pass": 1,
+					"fail": 0
+				},
+				"response is an object and not empty validation": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Expected products validation": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Expected JSON schema validation": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				767
+			],
+			"allTests": [
+				{
+					"successful response validation": true,
+					"response validation": true,
+					"response is an object and not empty validation": true,
+					"Expected products validation": true,
+					"Expected JSON schema validation": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 4895,
+	"collection": {
+		"requests": [
+			{
+				"id": "78524ff7-a159-480c-91bd-beac04dca552",
+				"method": "GET"
+			},
+			{
+				"id": "c3036a92-7a49-4c10-bdc1-00bf6c6aceff",
+				"method": "GET"
+			},
+			{
+				"id": "c96ce089-0c5b-4170-b4bb-4beff596861f",
+				"method": "GET"
+			},
+			{
+				"id": "54e86393-046b-44ea-8cdb-d7f66f159d3a",
+				"method": "GET"
+			},
+			{
+				"id": "99d8b663-da5b-41a8-8f8b-c0cc02e14b9a",
+				"method": "GET"
+			},
+			{
+				"id": "de28eb81-f642-4dd6-9248-35dcb1e63802",
+				"method": "GET"
+			},
+			{
+				"id": "930740ca-d0eb-4b18-b1b1-bd8b6f29f6cd",
+				"method": "GET"
+			},
+			{
+				"id": "2b78cbde-bb5f-4f43-9131-3888a214cdc2",
+				"method": "POST"
+			},
+			{
+				"id": "fafbd913-0459-4283-834b-a7384d834cad",
+				"method": "PUT"
+			},
+			{
+				"id": "2602bc79-fd07-4e9d-8959-566039a68a08",
+				"method": "PATCH"
+			},
+			{
+				"id": "8a0b08d9-8805-43db-bf3f-306c89c1196d",
+				"method": "DELETE"
+			}
+		]
+	}
+}
