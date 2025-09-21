@@ -13,5 +13,5 @@ The idea is to document my learning process while also building something reusab
 This project includes comprehensive API testing for the Online Store API using **Postman**.  
 All collections, environments, test runs, and workspace data are stored in this repository for transparency and reusability.  
 
-Postman files are available in the `postman/` folder.  
+Postman files are available. 
 Published API Documentation: [View Postman Documentation](https://documenter.getpostman.com/view/47948940/2sB3HtFH5j)  
